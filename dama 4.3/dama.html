@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>Dama</title>
+	<link rel="stylesheet" type="text/css" href="dama.css">
+	<link rel="shortcut icon" href="https://lh3.ggpht.com/PN0XorALcSkIILQLK7xTBjtIrpzDhqqNLj32YDXVDlBU0IJL48gihjGWVTL-5wD4aWU"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+	<h1 id="title">Checkers</h1>
+	
+	<div id="contador">
+	<div class="darken">
+	</div>
+	<div id="whiteEaten"></div>
+	<div id="tabuleiro" class="myExcludedDiv">
+	
+	<div class="row">
+		<div class="cell top left"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell top black"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell top"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell top black"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell top"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell top black"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell top"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell top right black"><div class="scaler"><div class="teste"></div></div></div>
+	</div>
+	<div class="row">
+		<div class="cell left black"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell black"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell black"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell black"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell right"><div class="scaler"><div class="teste"></div></div></div>
+	</div>
+	<div class="row">
+		<div class="cell left"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell black"><div class="scaler"><div class="teste"></div></div></div> 
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell black"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell black"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell right black"><div class="scaler"><div class="teste"></div></div></div>
+	</div>
+	<div class="row">
+		<div class="cell left"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell right"><div class="scaler"><div class="teste"></div></div></div>
+	</div>
+	<div class="row">
+		<div class="cell left"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell right"><div class="scaler"><div class="teste"></div></div></div>
+	</div>
+	<div class="row">
+		<div class="cell left white"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell white"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell white"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell white"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell right"><div class="scaler"><div class="teste"></div></div></div>
+	</div>
+	<div class="row">
+		<div class="cell left"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell white"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell white"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell white"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell right white"><div class="scaler"><div class="teste"></div></div></div>
+	</div>
+	<div class="row">
+		<div class="cell bottom left white"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell bottom"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell bottom white"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell bottom"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell bottom white"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell bottom"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell bottom white"><div class="scaler"><div class="teste"></div></div></div>
+		<div class="cell bottom right"><div class="scaler"><div class="teste"></div></div></div>
+	</div>
+	</div>
+	<div id="blackEaten"></div>
+	</div>
+	<p id="turnDiv">White starts</p>
+
+	<div style="display: none"><div class="blackPiece"><div class="cc"></div></div></div>
+	<div style="display: none"><div class="blackPieceMove"><div class="cc"></div></div></div>
+	<div style="display: none"><div class="whitePiece"><div class="cc"></div></div></div>
+	<div style="display: none"><div class="whitePieceMove"><div class="cc"></div></div></div>
+	<div style="display: none"><div class="damaBlackPiece"><i class="fas fa-crown fa-2x whiteCrown"></i><div class="cc1"></div></div></div>
+	<div style="display: none"><div class="damaWhitePiece"><i class="fas fa-crown fa-2x blackCrown"></i><div class="cc1"></div></div></div>
+	<div style="display: none"><div class="blackPieceEaten"></div></div>
+	<div style="display: none"><div class="whitePieceEaten"></div></div>
+
+	
+	<script src="dama.js" type="text/javascript"></script>
+</body>
+</html>

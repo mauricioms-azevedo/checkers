@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Krona+One|Quicksand:300|Revalia');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+body{
+	background-color: #0F0F0F;
+	background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	line-height: 50px;
+	color: white;
+	font-size: 20px
+}
+
+.row:nth-child(odd) .cell:nth-child(even) {
+ background-color: #1b1919!important;    
+}
+.row:nth-child(even) .cell:nth-child(odd) {
+ background-color: #1b1919!important;    
+}
+
+.teste{
+	width: 46px;
+	height: 46px;
+	border: 2px dashed black;
+	border-radius: 40px;
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	margin-top: 6px;
+	animation: rotation 4s linear infinite;
+	transition: 0.1s ease-out;
+	opacity: 0;
+}
+.scaler{
+	
+}
+
+.zeroOpacity{
+	opacity: 0!important;
+	transition: 0s!important;
+}
+
+@keyframes pulinhoo{
+	from{transform: scale(0.5)}
+	to{transform: scale(1.1)}
+}
+
+@keyframes pulinho{
+	0%{transform: scale(1.1)}
+	60%{transform: scale(1)}
+	100%{transform: scale(1.1)}
+}
+
+@keyframes rotation{
+	from{transform: rotate(0deg)}
+	to{transform: rotate(360deg)}
+}
+
+#tabuleiro{
+	width: 500px;
+	height: 500px;
+	background-color: black;
+	display: inline-block;
+	border: 8px solid black;
+	z-index: 1;
+}
+
+.cell{
+	width: 62.5px;
+	height: 62.5px;
+	background-color: #c8a67d;
+	background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+	float: left;
+	border: 1px solid black;
+	box-sizing: border-box;
+	padding: 1px 0;
+	text-align: center
+	z-index:1;
+}
+
+.blackPiece{
+	width: 58px;
+	height: 58px;
+	background-color: #4a4a48;
+	background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+	border-radius: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	transition: ease-out 0.1s;
+	border: 2px solid black;
+	z-index: 100;
+}
+
+.whitePiece{
+	width: 58px;
+	height: 58px;
+	background-color: #FFF4AF;
+	background-image: url("https://www.transparenttextures.com/patterns/tileable-wood-colored.png");
+	border-radius: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	transition: ease-out 0.1s;
+	border: 2px solid black;
+	z-index: 100;
+}
+
+.damaBlackPiece{
+	width: 58px;
+	height: 58px;
+	background-color: #4a4a48;
+	background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+	border-radius: 100%;
+	display: inline-block;
+	padding-top: 5.5px;
+	box-sizing: border-box;
+	transition: ease-out 0.1s;
+    border: 2px solid black;
+}
+
+.damaWhitePiece{
+	width: 58px;
+	height: 58px;
+	background-color: #FFF4AF;
+	background-image: url("https://www.transparenttextures.com/patterns/tileable-wood-colored.png");
+	border-radius: 100%;
+	display: inline-block;
+	padding-top: 5.5px;
+	box-sizing: border-box;
+	transition: ease-out 0.1s;
+    border: 2px solid black;
+}
+
+.blackCrown{
+	color: #010101;
+	transform: scale(0.85);
+}
+
+.whiteCrown{
+	transform: scale(0.85);
+	color: #fff6be;
+}
+
+.darken{
+	width: 516px;
+	height: 516px;
+	background-color: black;
+	opacity: 0;
+	display: inline-block;
+	position: absolute;
+	z-index: 3;
+	transition: ease-out 0.3s;
+	display: none;
+}
+
+.blackPieceMove{
+	width: 56px;
+	height: 56px;
+	background-color: #4a4a48;
+	background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+	border-radius: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	transition: ease-out 0.1s;
+	position: relative;
+}
+
+.whitePieceMove{
+	width: 56px;
+	height: 56px;
+	background-color: #FFF4AF;
+	background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+	border-radius: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	transition: ease-out 0.1s;
+	position: relative;
+}
+
+.move{
+	transition: 0.2s;
+}
+
+#blackEaten{
+	width: 58px;
+	height: 150px;
+	background-color: white;
+	background-color: #0F0F0F;
+	background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+	border-radius: 3px;
+	float: right;
+	margin-top: 366px;
+	transform: rotate(180deg);
+	margin-bottom: 1px;
+}
+
+#whiteEaten{
+	width: 58px;
+	height: 150px;
+	background-color: white;
+	background-color: #0F0F0F;
+	background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+	border-radius: 3px;
+	float: left;
+	margin-top: 1px;
+}
+
+.blackPieceEaten{
+	width: 56px;
+	height: 10px;
+	background-color: #4a4a48;
+	background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+	border-radius: 3px;
+	display: inline-block;
+	box-sizing: border-box;
+	border: 2px solid black;
+	margin-top: -1px!important;
+    float: right;
+    position: relative;
+}
+
+.whitePieceEaten{
+	width: 58px;
+	height: 12px;
+	background-color: #FFF4AF;
+	background-image: url("https://www.transparenttextures.com/patterns/tileable-wood-colored.png");
+	border-radius: 3px;
+	display: inline-block;
+	box-sizing: border-box;
+	border: 2px solid black;
+	margin-top: -1px!important;
+    float: left;
+    position: relative;
+}
+
+#contador{
+	text-align: center;
+	display: inline-block;
+	width: 646px;
+	height: 516px;
+}
+
+#turnDiv{
+	line-height: 0px;
+	margin-top: 5px
+}
+
+#title{
+	margin-top: 10px
+}
